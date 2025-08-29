@@ -1,0 +1,88 @@
+/* layout + typography */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,#4facfe 0%,#00f2fe 100%);
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #111;
+}
+
+/* centered card */
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* header stacked lines */
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+}
+.site-header .subtitle {
+  margin: 8px 0 0 0;
+  color: #f3f9ff;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* search row (input + button) */
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+#city {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+#searchBtn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* weather info card - each piece on its own line */
+.weather-box {
+  margin-top: 18px;
+  background: rgba(255,255,255,0.95);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-align: left;          /* keep each line left aligned */
+  color: #111;
+}
+
+/* icon centered above the text so it doesn't push lines inline */
+.weather-box img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* make every detection its own paragraph / line */
+.weather-box h2 { margin: 0 0 8px 0; }
+.weather-box p { margin: 8px 0; line-height: 1.35; font-size: 15px; }
+
+/* small responsive tweak */
+@media (max-width:420px) {
+  .site-header h1 { font-size: 22px; }
+  #city { padding: 8px; font-size: 14px; }
+}
+
+
