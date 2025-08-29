@@ -24,7 +24,9 @@ It fetches real-time weather details like **temperature, humidity, and wind spee
 ---
 
 ## 📷 Demo
-![Weather App Screenshot](screenshot.png)  
+![Weather App Screenshot](<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/bb6bce8b-251d-4e62-95dc-7c492c45ed34" />
+<img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/7f7d6cc9-ce81-4c72-ba1c-e5da93fae695" />
+.png)  
 *(Add a screenshot of your app here!)*
 
 ---
